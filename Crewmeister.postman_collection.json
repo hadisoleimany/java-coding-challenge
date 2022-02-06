@@ -1,0 +1,150 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Crewmeister",
+		"_postman_id": "01c1c43c-de0a-e68f-3bef-89e7edc381cd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "currencies",
+			"request": {
+				"url": "http://localhost:8080/api/currencies",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Allcurrencies",
+			"request": {
+				"url": "http://localhost:8080/api/allcurrency",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AllRateBycurrencies",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/ratecurrency?currency=AUD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ratecurrency"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "AUD",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AllRateBycurrencies By Date",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/ratecurrencybydate?currency=AUD&date=1999-01-13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ratecurrencybydate"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "AUD",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "date",
+							"value": "1999-01-13",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAmount By date and currency",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/calcratebydate?currency=USD&date=2022-02-04&amount=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calcratebydate"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "USD",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "date",
+							"value": "2022-02-04",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "amount",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
